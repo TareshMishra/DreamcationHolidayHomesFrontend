@@ -50,7 +50,7 @@ const ContactFormModal = ({ onClose }) => {
             // const url = 'https://dreamcation-backend-1.onrender.com/submit-form'
 
             // Send the form data including check-in and check-out dates to the backend
-            const response = await axios.post('https://dreamcationholidayhomesbackend.onrender.com', {
+            const response = await axios.post('https://dreamcationholidayhomesbackend.onrender.com/submit-form', {
                 ...formData,  // Spread the existing form data
                 checkIn: formData.checkIn.toISOString(),
                 checkOut: formData.checkOut.toISOString(),
