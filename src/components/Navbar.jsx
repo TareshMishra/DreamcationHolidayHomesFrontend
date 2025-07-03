@@ -2,14 +2,20 @@ import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
 import logo from "../assets/logo.png";
 import { useState, useEffect } from 'react';
+import { href, Link } from 'react-router-dom';
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, openForm }) => {
     const [scrolled, setScrolled] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
 
-    const navItems = [
-        { name: 'Services', href: '#home' },
-        { name: 'Properties', href: '#properties' },
+    // const navItems = [
+    //     { name: "Services", path: "/services" },
+    //     { name: "Properties", path: "/properties" },
+    // ];
+
+        const navItems = [
+        { name: "Services", href: "#services" },
+        { name: "Properties", href: "#properties" },
     ];
 
     useEffect(() => {
@@ -48,13 +54,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, openForm }) => {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center text-base space-x-6 lg:space-x-10 py-6">
                         {navItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.name}
-                                href={item.href}
+                                to={item.path}
                                 className={`${textColor} hover:text-gold transition-colors duration-300 font-medium`}
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                         <button
                             onClick={openForm}
