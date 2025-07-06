@@ -31,7 +31,7 @@ const properties = [
     airbnbLink: "https://www.airbnb.com/rooms/2",
     images: ["src\\assets\\Al_Jwaraha_JVT_Studio\\image-1.jpg",
       "./src/assets/Al_Jwaraha_JVT_Studio/image-2.jpg",
-      "src\\assets\\Al_Jwaraha_JVT_Studio\\image-3.jpg",
+      "/images/Al_Jwaraha_JVT_Studio/image-3.jpg",
       "src\\assets\\Al_Jwaraha_JVT_Studio\\image-4.jpg",
       "src\\assets\\Al_Jwaraha_JVT_Studio\\image-5.jpg",
     ],
