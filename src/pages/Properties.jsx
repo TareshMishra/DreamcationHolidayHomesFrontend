@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from 'framer-motion';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ContactFormModal from "../components/ContactFormModal";
+import ContactFormModal from "../components/ContactFormModal"
+import img1 from "../assets/Capital_Tower_Business_Bay_Studio/img-1.jpg"
+
 
 const properties = [
   {
@@ -13,7 +15,7 @@ const properties = [
     amenities: ["Mountain View", "Fireplace", "WiFi", "Kitchen"],
     airbnbLink: "https://www.airbnb.com/rooms/1",
     images: [
-      "src\\assets\\Capital_Tower_Business_Bay_Studio\\img-1.jpg",
+      img1,
       "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-2.jpg",
       "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-3.jpg",
       "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-4.jpg",
