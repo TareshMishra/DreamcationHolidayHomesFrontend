@@ -5,7 +5,6 @@ import picture2 from '../assets/pmc/image2.jpg';
 import picture3 from '../assets/pmc/image3.jpg';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import ContactFormModal from '../components/ContactFormModal';
 
 const Pmc = () => {
 
@@ -100,7 +99,7 @@ const Pmc = () => {
             </div>
             <AnimatePresence>
                     {isFormOpen && (
-                        <ContactFormModal onClose={() => setIsFormOpen(false)} />
+                        <contactform onClose={() => setIsFormOpen(false)} />
                     )}
                 </AnimatePresence>
             <Footer/>

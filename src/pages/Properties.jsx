@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactFormModal from "../components/ContactFormModal"
-import img1 from "../assets/Capital_Tower_Business_Bay_Studio/img-1.jpg"
+
 
 
 const properties = [
@@ -15,11 +15,11 @@ const properties = [
     amenities: ["Mountain View", "Fireplace", "WiFi", "Kitchen"],
     airbnbLink: "https://www.airbnb.com/rooms/1",
     images: [
-      img1,
-      "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-2.jpg",
-      "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-3.jpg",
-      "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-4.jpg",
-      "src\\assets\\Capital_Tower_Business_Bay_Studio\\image-5.jpg",
+      "images/Capital_Tower_Business_Bay_Studio/img-1.jpg",
+      "images/Capital_Tower_Business_Bay_Studio/image-2.jpg",
+      "images/Capital_Tower_Business_Bay_Studio/image-3.jpg",
+      "images/Capital_Tower_Business_Bay_Studio/image-4.jpg",
+      "images/Capital_Tower_Business_Bay_Studio/image-5.jpg",
     ]
   },
   {
@@ -29,11 +29,11 @@ const properties = [
     description: "Experience luxury by the ocean with direct beach access. Your perfect tropical getaway awaits.",
     amenities: ["Beach Access", "Pool", "AC", "Sea View", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/2",
-    images: ["src\\assets\\Al_Jwaraha_JVT_Studio\\image-1.jpg",
-      "./src/assets/Al_Jwaraha_JVT_Studio/image-2.jpg",
-      "/images/Al_Jwaraha_JVT_Studio/image-3.jpg",
-      "src\\assets\\Al_Jwaraha_JVT_Studio\\image-4.jpg",
-      "src\\assets\\Al_Jwaraha_JVT_Studio\\image-5.jpg",
+    images: ["images/Al_Jwaraha_JVT_Studio/image-1.jpg",
+      "images/Al_Jwaraha_JVT_Studio/image-2.jpg",
+      "images/Al_Jwaraha_JVT_Studio/image-3.jpg",
+      "images/Al_Jwaraha_JVT_Studio/image-4.jpg",
+      "images/Al_Jwaraha_JVT_Studio/image-5.jpg",
     ],
   },
   {
@@ -43,10 +43,10 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Dubai_Sports_City_Royal_Residence_2_Studio\\image-1.jpg",
-      "src\\assets\\Dubai_Sports_City_Royal_Residence_2_Studio\\image-2.jpg",
-      "src\\assets\\Dubai_Sports_City_Royal_Residence_2_Studio\\image-3.jpg",
-      "src\\assets\\Dubai_Sports_City_Royal_Residence_2_Studio\\image-4.jpg"
+    images: ["images/Dubai_Sports_City_Royal_Residence_2_Studio/image-1.jpg",
+      "images/Dubai_Sports_City_Royal_Residence_2_Studio/image-2.jpg",
+      "images/Dubai_Sports_City_Royal_Residence_2_Studio/image-3.jpg",
+      "images/Dubai_Sports_City_Royal_Residence_2_Studio/image-4.jpg"
     ],
   },
   {
@@ -56,10 +56,10 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Murjan_JBR_Studio\\image-1.jpg",
-      "src\\assets\\Murjan_JBR_Studio\\image-2.jpg",
-      "src\\assets\\Murjan_JBR_Studio\\image-3.jpg",
-      "src\\assets\\Murjan_JBR_Studio\\image-4.jpg",
+    images: ["images/Murjan_JBR_Studio/image-1.jpg",
+      "images/Murjan_JBR_Studio/image-2.jpg",
+      "images/Murjan_JBR_Studio/image-3.jpg",
+      "images/Murjan_JBR_Studio/image-4.jpg",
     ],
   },
   {
@@ -69,10 +69,10 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Mag_5_Studio\\image-1.jpg",
-      "src\\assets\\Mag_5_Studio\\image-2.jpg",
-      "src\\assets\\Mag_5_Studio\\image-3.jpg",
-      "src\\assets\\Mag_5_Studio\\image-4.jpg",
+    images: ["images/Mag_5_Studio/image-1.jpg",
+      "images/Mag_5_Studio/image-2.jpg",
+      "images/Mag_5_Studio/image-3.jpg",
+      "images/Mag_5_Studio/image-4.jpg",
     ],
   },
   {
@@ -82,11 +82,11 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Crystal_Placa_JVC_Studio\\image-1.jpg",
-      "src\\assets\\Crystal_Placa_JVC_Studio\\image-2.jpg",
-      "src\\assets\\Crystal_Placa_JVC_Studio\\image-3.jpg",
-      "src\\assets\\Crystal_Placa_JVC_Studio\\image-4.jpg",
-      "src\\assets\\Crystal_Placa_JVC_Studio\\image-5.jpg"
+    images: ["images/Crystal_Placa_JVC_Studio/image-1.jpg",
+      "images/Crystal_Placa_JVC_Studio/image-2.jpg",
+      "images/Crystal_Placa_JVC_Studio/image-3.jpg",
+      "imagesCrystal_Placa_JVC_Studio/image-4.jpg",
+      "images/Crystal_Placa_JVC_Studio/image-5.jpg"
     ],
   },
   {
@@ -96,10 +96,10 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Glamz_By_Danube_Furjan_1bedroom\\image-1.jpg",
-      "src\\assets\\Glamz_By_Danube_Furjan_1bedroom\\image-2.jpg",
-      "src\\assets\\Glamz_By_Danube_Furjan_1bedroom\\image-3.jpg",
-      "src\\assets\\Glamz_By_Danube_Furjan_1bedroom\\image-4.jpg",
+    images: ["images/Glamz_By_Danube_Furjan_1bedroom/image-1.jpg",
+      "images/Glamz_By_Danube_Furjan_1bedroom/image-2.jpg",
+      "images/Glamz_By_Danube_Furjan_1bedroom/image-3.jpg",
+      "images/Glamz_By_Danube_Furjan_1bedroom/image-4.jpg",
     ],
   },
   {
@@ -109,9 +109,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Azizi_Rivera_Nadel_Sheba_Studio\\image-1.jpg",
-      "src\\assets\\Azizi_Rivera_Nadel_Sheba_Studio\\image-2.jpg",
-      "src\\assets\\Azizi_Rivera_Nadel_Sheba_Studio\\image-3.jpg",
+    images: ["images/Azizi_Rivera_Nadel_Sheba_Studio/image-1.jpg",
+      "images/Azizi_Rivera_Nadel_Sheba_Studio/image-2.jpg",
+      "images/Azizi_Rivera_Nadel_Sheba_Studio/image-3.jpg",
     ],
   },
   {
@@ -121,9 +121,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Autumn_JVC_1_Bedroom\\image-1.jpg",
-      "src\\assets\\Autumn_JVC_1_Bedroom\\image-2.jpg",
-      "src\\assets\\Autumn_JVC_1_Bedroom\\image-3.jpg",
+    images: ["images/Autumn_JVC_1_Bedroom/image-1.jpg",
+      "images/Autumn_JVC_1_Bedroom/image-2.jpg",
+      "images/Autumn_JVC_1_Bedroom/image-3.jpg",
     ],
   },
   {
@@ -133,9 +133,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\District_1_1_bedroom\\image-1.jpg",
-      "src\\assets\\District_1_1_bedroom\\image-2.jpg",
-      "src\\assets\\District_1_1_bedroom\\image-3.jpg",
+    images: ["images/District_1_1_Bedroom/image-1.jpg",
+      "images/District_1_1_Bedroom/image-2.jpg",
+      "images/District_1_1_Bedroom/image-3.jpg",
     ],
   },
   {
@@ -145,9 +145,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\J_One_Business_Bay_Studio\\image-1.jpg",
-      "src\\assets\\J_One_Business_Bay_Studio\\image-2.jpg",
-      "src\\assets\\J_One_Business_Bay_Studio\\image-3.jpg",
+    images: ["images/J_One_Business_Bay_Studio/image-1.jpg",
+      "images/J_One_Business_Bay_Studio/image-2.jpg",
+      "images/J_One_Business_Bay_Studio/image-3.jpg",
     ],
   },
   {
@@ -157,9 +157,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Damac_Maison_Business_Bay_Studio\\image-1.jpg",
-      "src\\assets\\Damac_Maison_Business_Bay_Studio\\image-2.jpg",
-      "src\\assets\\Damac_Maison_Business_Bay_Studio\\image-3.jpg",
+    images: ["images/Damac_Maison_Business_Bay_Studio/image-1.jpg",
+      "images/Damac_Maison_Business_Bay_Studio/image-2.jpg",
+      "images/Damac_Maison_Business_Bay_Studio/image-3.jpg",
     ],
   },
   {
@@ -169,9 +169,9 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["src\\assets\\Mag_555_Boulevard_Studio\\image-1.jpg",
-      "src\\assets\\Mag_555_Boulevard_Studio\\image-2.jpg",
-      "src\\assets\\Mag_555_Boulevard_Studio\\image-3.jpg",
+    images: ["images/Mag_555_Boulevard_Studio/image-1.jpg",
+      "images/Mag_555_Boulevard_Studio/image-2.jpg",
+      "images/Mag_555_Boulevard_Studio/image-3.jpg",
     ],
   },
 ];
