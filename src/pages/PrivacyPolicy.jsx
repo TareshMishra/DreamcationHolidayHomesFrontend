@@ -5,7 +5,7 @@ const PrivacyPolicy = () => (
       We respect your privacy. Your personal data is only used for booking and communication purposes and is never shared with third parties without consent.
     </p>
     <p className="text-gray-700 leading-relaxed">
-      For any concerns, contact us at <a href="mailto:support@example.com" className="text-gold hover:underline">support@example.com</a>.
+      For any concerns, contact us at <a href="mailto:Info@dreamcationholidayhomes.com" className="text-gold hover:underline">Info@dreamcationholidayhomes.com</a>.
     </p>
   </div>
 );
