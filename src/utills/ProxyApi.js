@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getBaseUrl = () => {
     if (process.env.NODE_ENV === 'production') {
-        return 'https://dreamcationholidayhomesbackend.onrender.com';
+        return "https://api.dreamcationholidayhomes.com";
     } else {
         return 'http://localhost:5000';
     }

@@ -78,10 +78,12 @@ const Footer = ({ openForm }) => {
           >
             <h3 className="text-xl font-semibold mb-6 text-[#0b0c10]">Quick Links</h3>
             <ul className="space-y-4 text-sm lg:text-base">
-              <li><a href="/" className="hover:text-[#d4af37] transition-colors">Services</a></li>
-              <li><a href="/" className="hover:text-[#d4af37] transition-colors">Properties</a></li>
+              <li><a href="/properties" className="hover:text-[#d4af37] transition-colors">Properties</a></li>
               <li><button onClick={openForm} className="hover:text-[#d4af37] transition-colors">Contact</button></li>
+              <li><a href="/privacy-policy" className="hover:text-[#d4af37] transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:text-[#d4af37] transition-colors">Terms of Service</a></li>
             </ul>
+
           </motion.div>
 
         </div>

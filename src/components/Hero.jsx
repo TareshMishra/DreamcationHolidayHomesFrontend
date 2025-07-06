@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import hero1 from "../assets/hero1.jpg"
 import hero2 from "../assets/hero2.jpg"
 import hero3 from "../assets/hero3.jpg"
@@ -12,7 +13,8 @@ const Hero = ({ openForm }) => {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [scrolled, setScrolled] = useState(false);
-
+    const navigate = useNavigate();
+    
     // Change background every 5 seconds
     useEffect(() => {
         const interval = setInterval(() => {
@@ -85,12 +87,13 @@ const Hero = ({ openForm }) => {
                 >
                     <button
                         onClick={openForm}
-                        className="bg-gold text-[#0b0c10] hover:bg-gold-dark hover:shadow-[0_4px_20px_#ffd700aa] transform hover:scale-105 transition-all duration-300 font-semibold py-3 px-8 rounded-xl"
+                        className="bg-gold text-[#0b0c10] hover:bg-gold-dark hover:shadow-[0_4px_20px_#ffd700aa] transform hover:scale-105 transition-all duration-300 font-semibold py-3 px-8 rounded-xl cursor-pointer"
                     >
                         Get in Touch
                     </button>
                     <button
-                        className="border border-[#f8f9fa] text-[#f8f9fa] hover:bg-[#f8f9fa] hover:text-[#0b0c10] hover:shadow-[0_4px_20px_#ffffff55] transform hover:scale-105 transition-all duration-300 font-semibold py-3 px-8 rounded-xl"
+                        className="border border-[#f8f9fa] text-[#f8f9fa] hover:bg-[#f8f9fa] hover:text-[#0b0c10] hover:shadow-[0_4px_20px_#ffffff55] transform hover:scale-105 transition-all duration-300 font-semibold py-3 px-8 rounded-xl cursor-pointer"
+                        onClick={()=> navigate('/properties')}
                     >
                         Browse Properties
                     </button>

@@ -21,14 +21,14 @@ const FloatingContactButton = ({ onClick }) => {
     >
       <button
         onClick={openWhatsApp}
-        className="bg-green-700 text-[#0b0c10] p-4 rounded-full shadow-xl hover:bg-green-800 transition-colors duration-300 flex items-center justify-center"
+        className="bg-green-700 text-[#0b0c10] p-4 rounded-full shadow-xl hover:bg-green-800 transition-colors duration-300 flex items-center justify-center cursor-pointer"
         aria-label="whatsapp"
       >
         <FaWhatsapp size={24} />
       </button>
       <button
         onClick={onClick}
-        className="bg-gold text-[#0b0c10] p-4 rounded-full shadow-xl hover:bg-gold-dark transition-colors duration-300 flex items-center justify-center"
+        className="bg-gold text-[#0b0c10] p-4 rounded-full shadow-xl hover:bg-gold-dark transition-colors duration-300 flex items-center justify-center cursor-pointer"
         aria-label="Contact Us"
       >
         <FiPhone size={24} />

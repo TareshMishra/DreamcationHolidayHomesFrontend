@@ -47,10 +47,10 @@ const ContactFormModal = ({ onClose }) => {
 
         setIsSubmitting(true);
         try {
-            // const url = 'https://dreamcation-backend-1.onrender.com/submit-form'
+            const url = 'https://api.dreamcationholidayhomes.com/submit-form'
 
             // Send the form data including check-in and check-out dates to the backend
-            const response = await axios.post('https://dreamcationholidayhomesbackend.onrender.com/submit-form', {
+            const response = await axios.post(url, {
                 ...formData,  // Spread the existing form data
                 checkIn: formData.checkIn.toISOString(),
                 checkOut: formData.checkOut.toISOString(),
@@ -94,7 +94,7 @@ const ContactFormModal = ({ onClose }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md md"
+                className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md md"
             >
                 <motion.div
                     initial={{ scale: 0.95, y: 20, opacity: 0 }}

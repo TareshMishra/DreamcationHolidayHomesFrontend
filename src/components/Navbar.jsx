@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
 import logo from "../assets/logo.png";
 import { useState, useEffect } from 'react';
-import { href, Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, openForm }) => {
     const [scrolled, setScrolled] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
+    const location = useLocation();
+    const isRealEstatePage = location.pathname === '/real-estate-brokerage';
+    const isPropertiesPage = location.pathname === '/properties';
+    const isPmcPage = location.pathname === '/pmc'
 
-    // const navItems = [
-    //     { name: "Services", path: "/services" },
-    //     { name: "Properties", path: "/properties" },
-    // ];
-
-        const navItems = [
-        { name: "Services", href: "#services" },
-        { name: "Properties", href: "#properties" },
+    const navItems = [
+        { name: "Properties", path: "/properties" },
+        { name: "Real Estate Brokerage", path: "/real-estate-brokerage" },
+        { name: "PMC", path: "/pmc" },
     ];
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, openForm }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navBackground = scrolled || isMenuOpen;
+    const navBackground = scrolled || isMenuOpen || isRealEstatePage || isPropertiesPage || isPmcPage;
     const textColor = navBackground ? 'text-[#0b0c10]' : 'text-[#f8f9fa]';
 
     return (

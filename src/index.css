@@ -12,6 +12,7 @@
   --rich-black: #0b0c10;
   --gold: #489a5a;
   --gold-dark: #e6c200;
+  --custom-white: #f5f5f5;
 
   --font-body: 'Inter', sans-serif;
   --font-display: 'Playfair Display', serif;
@@ -24,6 +25,7 @@ html {
 @theme {
   --color-gold: #d4af37;
   --color-gold-dark: #c9a227;
+  --color-mustard: #fdfaf5;
 }
 
 body {
@@ -137,3 +139,25 @@ h1, h2, h3, h4, h5, h6 {
 /* .swiper-pagination-bullet-active {
   opacity: 1;
 } */
+
+/* Scrollbar styles for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d4af37; /* Gold */
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bfa12d; /* Darker gold on hover */
+}
+
+/* Scrollbar styles for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d4af37 #f1f1f1;
+}

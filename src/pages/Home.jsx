@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { GoogleOAuthProvider } from '@react-oauth/google';
+
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -12,14 +12,20 @@ import Footer from '../components/Footer';
 import ExperienceSection from '../components/ExperienceSection';
 import UnforgettableExperience from '../components/UnforgettableExperience';
 import GoogleOauth from '../components/GoogleOauth';
+import Temp from '../components/Temp';
 
-const Home = () => {
+const Home = ({showGoogleSignIn}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isFormOpen, setIsFormOpen] = useState(true);
-    const [showGoogleModal, setShowGoogleModal] = useState(false);
+    const [isFormOpen, setIsFormOpen] = useState(false);
 
+    useEffect(()=>{
+        setTimeout(() => {
+            showGoogleSignIn();
+        }, 6000);
+    }, [])
+    
     return (
-        <GoogleOAuthProvider clientId="919479785161-66geqv1so7nka7mjthplcrg2g9n2g0lq.apps.googleusercontent.com">
+        
             <div className="min-h-screen">
                 <Navbar
                     isMenuOpen={isMenuOpen}
@@ -45,15 +51,7 @@ const Home = () => {
                         <ContactFormModal onClose={() => setIsFormOpen(false)} />
                     )}
                 </AnimatePresence>
-
-                {/* Google OAuth Modal */}
-                <AnimatePresence>
-                    {showGoogleModal && (
-                        <GoogleOauth onClose={() => setShowGoogleModal(false)} />
-                    )}
-                </AnimatePresence>
             </div>
-        </GoogleOAuthProvider>
     );
 };
 
