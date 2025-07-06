@@ -11,8 +11,6 @@ import PropertyHighlights from '../components/PropertyHighlights';
 import Footer from '../components/Footer';
 import ExperienceSection from '../components/ExperienceSection';
 import UnforgettableExperience from '../components/UnforgettableExperience';
-import GoogleOauth from '../components/GoogleOauth';
-import Temp from '../components/Temp';
 
 const Home = ({showGoogleSignIn}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
