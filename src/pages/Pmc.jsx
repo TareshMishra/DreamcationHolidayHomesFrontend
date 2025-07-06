@@ -5,11 +5,11 @@ import picture2 from '../assets/pmc/image2.jpg';
 import picture3 from '../assets/pmc/image3.jpg';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import ContactFormModal from '../components/ContactFormModal';
 
 const Pmc = () => {
 
     const [isFormOpen, setIsFormOpen] = useState(false);
-
 
     return (
         <div className="overflow-x-hidden">
@@ -99,7 +99,7 @@ const Pmc = () => {
             </div>
             <AnimatePresence>
                     {isFormOpen && (
-                        <contactform onClose={() => setIsFormOpen(false)} />
+                        <ContactFormModal onClose={() => setIsFormOpen(false)} />
                     )}
                 </AnimatePresence>
             <Footer/>
