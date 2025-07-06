@@ -133,7 +133,8 @@ const properties = [
     description: "Modern living in the heart of the city. Perfect for business travelers and urban explorers.",
     amenities: ["City Center", "Gym", "WiFi", "Balcony", "Garden"],
     airbnbLink: "https://www.airbnb.com/rooms/3",
-    images: ["images/District_1_1_Bedroom/image-1.jpg",
+    images: [
+      "images/District_1_1_Bedroom/image-1.jpg",
       "images/District_1_1_Bedroom/image-2.jpg",
       "images/District_1_1_Bedroom/image-3.jpg",
     ],

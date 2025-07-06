@@ -13,25 +13,25 @@ const RealEstateBrokerage = () => {
         {
             id: 1,
             name: "Palm Jumeirah",
-            image: "/public/images/palm-jumeirah.jpg",
+            image: "images/palm-jumeirah.jpg",
             location: "Jumeirah Dubai",
         },
         {
             id: 2,
             name: "Downtown",
-            image: "/public/images/downtown.jpg",
+            image: "images/downtown.jpg",
             location: "Downtown Dubai",
         },
         {
             id: 3,
             name: "JVC",
-            image: "/public/images/jvc.jpg",
+            image: "images/jvc.jpg",
             location: "JVC Dubai",
         },
         {
             id: 4,
             name: "JVT",
-            image: "/public/images/JVT.jpg",
+            image: "images/jvt.jpg",
             location: "JVT Dubai",
         },
     ];
